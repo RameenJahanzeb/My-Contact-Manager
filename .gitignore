@@ -1,0 +1,22 @@
+# Dependencies and build output
+contact-manager/node_modules/
+contact-manager/.next/
+contact-manager/.vercel/
+contact-manager/coverage/
+agent-service/.venv/
+agent-service/venv/
+
+# Local environment and generated files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+**/__pycache__/
+**/*.py[cod]
+contact-manager/*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db

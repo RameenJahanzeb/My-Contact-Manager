@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #172033;
+  --font-display:
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body:
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  scrollbar-color: #93b4f7 transparent;
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #172033;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.toast-in {
+  animation: toast-in 220ms ease-out both;
+}
